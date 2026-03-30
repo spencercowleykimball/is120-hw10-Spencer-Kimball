@@ -1,0 +1,50 @@
+
+/* Need to set the body's margin to 0 so the weather container centers correctly */
+body {
+    margin: 20px;
+}
+
+
+/* Trying to center the cards inside of the container */
+.weather_card_container {
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Trying to center the header, need to put this into a container fixme */
+.h1-header {
+    /* align-items: center; */
+    /* justify-content: center; */
+    margin: 0 auto;
+}
+
+/* Creating a fancy button */
+button {
+  font-family: "DM Serif Display", serif;
+  font-size: 25px;
+  
+  color: #090909;
+  font-size: 18px;
+  border-radius: 0.5em;
+  background: #e8e8e8;
+  cursor: pointer;
+  border: 1px solid #e8e8e8;
+  transition: all 0.3s;
+  box-shadow: 1px 1px 2px #c5c5c5, -1px -1px 2px #ffffff;
+  
+  padding: 10px;
+  margin-bottom: 15px;
+  margin-top: 20px;
+}
+
+button:active {
+  color: #666;
+  box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
+}
+
+/* button:hover {
+  transform: scale(1.1);
+} */
