@@ -2,6 +2,12 @@
 /* Need to set the body's margin to 0 so the weather container centers correctly */
 body {
     margin: 20px;
+
+    /* Adding the gradient background */
+    background: linear-gradient(-45deg, #23bef7, #ee7752, #c73e1d);
+	background-size: 200% 200%;
+	animation: gradient 5s ease infinite;
+	height: 100vh;
 }
 
 
@@ -45,6 +51,29 @@ button:active {
   box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
 }
 
-/* button:hover {
-  transform: scale(1.1);
-} */
+
+/* For the gradient animated background */
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+/* Footer */
+footer {
+    margin: 20px;
+    padding: 20px;
+}
+
+h4 {
+    font-size: 15px;
+    color: transparent;
+    /* background-color: white; */
+    /* padding: 20px; */
+}
